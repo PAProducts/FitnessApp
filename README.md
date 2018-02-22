@@ -2,7 +2,32 @@
 
 FitnessApp is a fitness app.
 
-Time spent: # hours spent in total
+## Considerations
+
+### About
+en the enormous world of fitness and workouts, finding good workouts and good exercises for each muscle group is a universal hassle. FitnessApp not only allows finding exercises and workouts by specific muscle group, but also shows gyms nearby, random workout options, and offline stored workouts. 
+
+### Stakeholders
+Users - Fitness enthusiasts
+
+### Core Flows
+Key functions :
+- Searching for workouts by muscle group
+- Saving workouts for offline use
+- Upload workouts
+- View nearby gyms on a map
+
+The user should see a screen for each of these.
+
+### Final Demo
+Each of the functions will be demonstrated live by alternating group members
+
+### Mobile Features
+- Maps
+- Device Shake
+
+### Technical Concerns
+- Have to find gym locations API
 
 ## User Stories
 
@@ -16,16 +41,8 @@ Time spent: # hours spent in total
 - [ ] User is able to view a list of popular workouts
 - [ ] User is able to save workouts for offline use
 - [ ] User is able to create and upload workouts
-
-The following **optional** user stories are implemented:
-
-- [x] Customize the selection effect of the cell (+1pt)
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+- [ ] User is able to view gyms nearby on a mapview
+- [ ] User is able shake the device to view a random workout
 
 ## Notes
 

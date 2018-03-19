@@ -28,6 +28,9 @@ class LoginViewController: UIViewController {
         let username = usernameField.text ?? ""
         let password = passwordField.text ?? ""
         
+        print(usernameField.text)
+        print(passwordField.text)
+        
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
             if username == "" || password == "" {
                 let alert = UIAlertController(title: "Failed!" , message: "No password or username", preferredStyle: UIAlertControllerStyle.alert)
@@ -55,8 +58,9 @@ class LoginViewController: UIViewController {
       
         
         // set user properties
-        newUser.username = usernameField.text
-        newUser.password = passwordField.text
+        
+        newUser.username = usernameField.text ?? ""
+        newUser.password = passwordField.text ?? ""
         
         // call sign up function on the object
         newUser.signUpInBackground { (success: Bool, error: Error?) in

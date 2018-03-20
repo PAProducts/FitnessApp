@@ -138,6 +138,35 @@
             </objects>
             <point key="canvasLocation" x="2148" y="170.68965517241381"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="2vK-pA-TrX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEe-3i-xbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="TuJ-kd-H4K" customClass="ProfileViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m3B-6l-HgY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAT-cF-7vv">
+                                <rect key="frame" x="135" y="553" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete account"/>
+                                <connections>
+                                    <action selector="didDeleteUser:" destination="TuJ-kd-H4K" eventType="touchUpInside" id="dB1-SM-cyd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vMe-a5-37L"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="XzV-mo-Dfl"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="deleteuser" id="uhs-OR-Gd9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="873" y="1243"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="x1V-l7-EO5">
             <objects>
@@ -165,18 +194,28 @@
             </objects>
             <point key="canvasLocation" x="718" y="171"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home View Controller-->
         <scene sceneID="2uQ-3d-kaF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vUM-pq-UIv" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vUM-pq-UIv" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="PLT-rJ-TsA"/>
+                    <navigationItem key="navigationItem" id="PLT-rJ-TsA">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="YGK-3Q-LDL">
+                            <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                            <connections>
+                                <action selector="didLogout:" destination="vUM-pq-UIv" id="Aqx-uB-6T6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TLT-ON-63X">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="qc0-xy-BEN" kind="relationship" relationship="viewControllers" id="fia-dR-amQ"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="logout" id="AZc-5n-q7R"/>
+                        <segue destination="TuJ-kd-H4K" kind="relationship" relationship="viewControllers" id="eAo-Jj-ylV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ja2-kH-Uek" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,4 +223,7 @@
             <point key="canvasLocation" x="1417" y="171"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uhs-OR-Gd9"/>
+    </inferredMetricsTieBreakers>
 </document>

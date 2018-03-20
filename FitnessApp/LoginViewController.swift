@@ -25,9 +25,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didLogin(_ sender: Any) {
+        print("entered")
         let username = usernameField.text ?? ""
         let password = passwordField.text ?? ""
         
+        print(username)
         
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
@@ -62,12 +64,12 @@ class LoginViewController: UIViewController {
         let newUser = PFUser()
       
         let username = usernameField.text
-        let password = usernameField.text
+        let password = passwordField.text
         // set user properties
         
         newUser.username = username
         newUser.password = password
-        print(newUser.username!)
+      //  print(newUser.username!)
         
         // call sign up function on the object
         newUser.signUpInBackground { (success: Bool, error: Error?) in

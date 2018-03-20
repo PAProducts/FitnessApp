@@ -33,9 +33,9 @@ Each of the functions will be demonstrated live by alternating group members
 
 - [x] User is able to register using their email address
 - [x] User is able to securely login using their registered information
-- [ ] User is able to securely log out of the application
+- [x] User is able to securely log out of the application
 - [ ] User logins are persisted
-- [ ] User is able to delete their account
+- [x] User is able to delete their account
 - [ ] User is able to view workouts according to muscle group
 - [ ] User is able to like/dislike workouts
 - [ ] User is able to view a list of popular workouts

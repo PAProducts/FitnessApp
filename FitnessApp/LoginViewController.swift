@@ -28,8 +28,7 @@ class LoginViewController: UIViewController {
         let username = usernameField.text ?? ""
         let password = passwordField.text ?? ""
         
-        print(usernameField.text)
-        print(passwordField.text)
+        
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
             if username == "" || password == "" {
@@ -54,13 +53,21 @@ class LoginViewController: UIViewController {
     
     @IBAction func didSignup(_ sender: Any) {
         
+        if usernameField.text == "" || passwordField.text == "" {
+            let alert = UIAlertController(title: "Failed!" , message: "Check for empty field", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
         let newUser = PFUser()
       
-        
+        let username = usernameField.text
+        let password = usernameField.text
         // set user properties
         
-        newUser.username = usernameField.text ?? ""
-        newUser.password = passwordField.text ?? ""
+        newUser.username = username
+        newUser.password = password
+        print(newUser.username!)
         
         // call sign up function on the object
         newUser.signUpInBackground { (success: Bool, error: Error?) in

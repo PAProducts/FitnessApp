@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Parse.initialize(with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) in
             configuration.applicationId = "fitnessapp"
-            configuration.clientKey = "nfwkejfnkjwewenfekjbv"
-            configuration.server = "https://fitnessapp.herokuapp.com/parse"
+            configuration.clientKey = "123456"
+            configuration.server = "https://fitnessapppk.herokuapp.com/parse"
         }))
         return true
     }

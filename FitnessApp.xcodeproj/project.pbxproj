@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106172D82062E25700BEE741 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106172D72062E25700BEE741 /* WorkoutsViewController.swift */; };
+		10DC59F12062D71600214755 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10DC59F02062D71600214755 /* GoogleService-Info.plist */; };
 		4AD04FC083116A94B9CA8D66 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBBF67037915ADDCC2BA77B /* Pods_FitnessAppTests.framework */; };
 		4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E83A1A82061B186004BADBE /* HomeViewController.swift */; };
 		4E83A1AB2061BFD3004BADBE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		087162F87A97698EDEC1E94B /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		106172D72062E25700BEE741 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		10DC59F02062D71600214755 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2198BCEDD0863CFC31E74678 /* Pods_FitnessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345BB911DDC9F6180F400512 /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C46FB5D7CADC72DA3F05647 /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		D1802647205FFA2100602F22 = {
 			isa = PBXGroup;
 			children = (
+				10DC59F02062D71600214755 /* GoogleService-Info.plist */,
 				D1802652205FFA2100602F22 /* FitnessApp */,
 				D1802667205FFA2100602F22 /* FitnessAppTests */,
 				D1802672205FFA2100602F22 /* FitnessAppUITests */,
@@ -145,6 +150,7 @@
 				4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */,
 				4EFD121920629C7F00DC3596 /* CustomWorkoutViewController.swift */,
 				4EFD121B2062A37C00DC3596 /* TableViewCell.swift */,
+				106172D72062E25700BEE741 /* WorkoutsViewController.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D180265E205FFA2100602F22 /* LaunchScreen.storyboard in Resources */,
+				10DC59F12062D71600214755 /* GoogleService-Info.plist in Resources */,
 				D180265B205FFA2100602F22 /* Assets.xcassets in Resources */,
 				D1802659205FFA2100602F22 /* Main.storyboard in Resources */,
 			);
@@ -357,12 +364,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -479,6 +492,7 @@
 				4EFD121A20629C7F00DC3596 /* CustomWorkoutViewController.swift in Sources */,
 				D1802656205FFA2100602F22 /* ViewController.swift in Sources */,
 				4E83A1AB2061BFD3004BADBE /* ProfileViewController.swift in Sources */,
+				106172D82062E25700BEE741 /* WorkoutsViewController.swift in Sources */,
 				D1802654205FFA2100602F22 /* AppDelegate.swift in Sources */,
 				4EFD121C2062A37C00DC3596 /* TableViewCell.swift in Sources */,
 				4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */,

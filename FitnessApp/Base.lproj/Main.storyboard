@@ -102,7 +102,7 @@
         <!--FitnessApp-->
         <scene sceneID="b7b-OQ-Q8i">
             <objects>
-                <viewController id="qc0-xy-BEN" sceneMemberID="viewController">
+                <viewController id="qc0-xy-BEN" customClass="WorkoutsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="42Z-UP-dbq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +133,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="5iQ-rl-0t3"/>
                     <navigationItem key="navigationItem" title="FitnessApp" largeTitleDisplayMode="always" id="trY-Xg-JkY"/>
+                    <connections>
+                        <outlet property="workoutTableView" destination="q0O-eM-pss" id="Njy-uR-Zip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhg-hM-BbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import Parse
 
 @UIApplicationMain
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.clientKey = "123456"
             configuration.server = "https://fitnessapppk.herokuapp.com/parse"
         }))
+        FirebaseApp.configure()
         return true
     }
 

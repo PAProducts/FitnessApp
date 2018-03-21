@@ -18,29 +18,34 @@ class WorkoutsViewController: UIViewController{
     
 
     var ref:DatabaseReference?
+    var list = [String]()
     @IBOutlet weak var workoutTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
         
-        ref?.child("Exercises").observeSingleEvent(of: .childAdded, with: { snapshot in
-            print(String(describing: snapshot.value))
+        var databaseHandle: DatabaseHandle?
+        databaseHandle = ref?.child("Exercises").observe(.childAdded, with: { (snapshot) in
+            let post = snapshot.value as? String
+            if let actualPost = post{
+                print(self.list)
+                print(actualPost)
+                self.list.append(actualPost)
+                self.workoutTableView.reloadData()
+            }
+            
         })
+        dump(list)
         
         //workoutTableView.delegate = self
         //workoutTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     /*
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
-        ref = Database.database().reference()
-        ref?.child("Exercises").child("1").observeSingleEvent(of: .childAdded, with: { snapshot in
-            cell.textLabel?.text = String(describing: snapshot.value)
-        })
-        return cell
-    }
-*/
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) {
+        
+    }*/
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

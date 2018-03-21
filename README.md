@@ -40,7 +40,7 @@ Each of the functions will be demonstrated live by alternating group members
 - [ ] User is able to like/dislike workouts
 - [ ] User is able to view a list of popular workouts
 - [ ] User is able to save workouts for offline use//
-- [ ] User is able to create and upload workouts
+- [x] User is able to create and upload workouts
 - [ ] User is able to view gyms nearby on a mapview//
 - [ ] User is able shake the device to view a random workout//
 

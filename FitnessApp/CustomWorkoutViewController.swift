@@ -31,16 +31,12 @@ class CustomWorkoutViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        
-         //Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
+       // self.getMSGs()
+        // Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
 
         // Do any additional setup after loading the view.
     }
-  /*
-    @objc func onTimer() {
-        getMSGs()
-    }
- */
+ 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let messages = messages {
             return messages.count
@@ -102,6 +98,9 @@ class CustomWorkoutViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
     }
+    
+   
+     
     
     @IBAction func didAdd(_ sender: Any) {
         if workoutName.text == "" || Reps.text == "" || Sets.text == "" {

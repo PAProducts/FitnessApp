@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class WorkoutsViewController: UIViewController{
+class WorkoutsViewController: UIViewController {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
@@ -18,32 +18,33 @@ class WorkoutsViewController: UIViewController{
     
 
     var ref:DatabaseReference?
+    var databaseHandle: DatabaseHandle?
     var list = [String]()
+    
     @IBOutlet weak var workoutTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        
-        var databaseHandle: DatabaseHandle?
         databaseHandle = ref?.child("Exercises").observe(.childAdded, with: { (snapshot) in
             let post = snapshot.value as? String
             if let actualPost = post{
-                print(self.list)
-                print(actualPost)
                 self.list.append(actualPost)
                 self.workoutTableView.reloadData()
             }
             
+            dump(self.list)
+            
         })
-        dump(list)
-        
+    }
         //workoutTableView.delegate = self
         //workoutTableView.dataSource = self
         // Do any additional setup after loading the view.
-    }
+    
     /*
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) {
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell_1")
+        cell.textLabel?.text = list[indexPath.row]
+        return(cell)
     }*/
 
     override func didReceiveMemoryWarning() {

@@ -10,10 +10,10 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class WorkoutsViewController: UIViewController {
+class WorkoutsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return list.count
     }
     
 
@@ -35,17 +35,16 @@ class WorkoutsViewController: UIViewController {
             dump(self.list)
             
         })
-    }
-        //workoutTableView.delegate = self
-        //workoutTableView.dataSource = self
+        workoutTableView.delegate = self
+        workoutTableView.dataSource = self
         // Do any additional setup after loading the view.
+    }
     
-    /*
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell_1")
         cell.textLabel?.text = list[indexPath.row]
         return(cell)
-    }*/
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

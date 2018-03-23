@@ -32,10 +32,10 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "WorkoutCell", for: indexPath) as! WorkoutCell
         print("Wow")
         let currentWorkout = workouts[indexPath.row]
-        cell.setsLabel.text = currentWorkout.reps
-        cell.workoutLabel.text = currentWorkout.workout
-        cell.usernameLabel.text = currentWorkout.user
-        cell.repsLabel.text = currentWorkout.repCount
+        cell.setsLabel.text = "Sets:" + currentWorkout.reps!
+        cell.workoutLabel.text = "Name:" + currentWorkout.workout!
+        cell.usernameLabel.text = "@" + currentWorkout.user!
+        cell.repsLabel.text = "Reps:" + currentWorkout.repCount!
         
         
         return cell

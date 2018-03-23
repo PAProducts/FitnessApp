@@ -12,7 +12,7 @@ import Parse
 class Workout: PFObject, PFSubclassing {
     // properties/fields must be declared here
     // @NSManaged to tell compiler these are dynamic properties
-    @NSManaged var setCount: String?
+    @NSManaged var reps: String?
     @NSManaged var workout: String?
     @NSManaged var user: String?
     @NSManaged var repCount: String?
@@ -48,7 +48,8 @@ class AddWorkoutViewController: UIViewController {
         }
         else {
             addWorkout()
-            self.performSegue(withIdentifier: "backSegue", sender: nil)
+            //self.performSegue(withIdentifier: "backSegue", sender: nil)
+            self.dismiss(animated: true, completion: nil)
         }
         
        
@@ -58,7 +59,7 @@ class AddWorkoutViewController: UIViewController {
         let addedWorkout = Workout()
         addedWorkout.workout = workoutText.text ?? ""
         addedWorkout.repCount = repsText.text ?? ""
-        addedWorkout.setCount = setsText.text ?? ""
+        addedWorkout.reps = setsText.text ?? ""
         addedWorkout.user = PFUser.current()?.username
         if (workoutText.text != nil || repsText.text != "" || setsText.text != ""){
             addedWorkout.saveInBackground { (success, error) in

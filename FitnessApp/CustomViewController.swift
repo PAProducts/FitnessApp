@@ -28,11 +28,11 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return workouts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      //  print("wow2")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "workoutCell", for: indexPath) as! WorkoutCell
-    //    print("Wow")
+        print("wow2")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WorkoutCell", for: indexPath) as! WorkoutCell
+        print("Wow")
         let currentWorkout = workouts[indexPath.row]
-       // cell.setsLabel.text = currentWorkout.setCount
+        cell.setsLabel.text = currentWorkout.reps
         cell.workoutLabel.text = currentWorkout.workout
         cell.usernameLabel.text = currentWorkout.user
         cell.repsLabel.text = currentWorkout.repCount

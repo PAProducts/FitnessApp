@@ -1,19 +1,19 @@
 //
-//  TableViewCell.swift
+//  WorkoutCell.swift
 //  FitnessApp
 //
-//  Created by Pallav  on 3/21/18.
+//  Created by Pallav  on 3/22/18.
 //  Copyright © 2018 Pallav Kamojjhala. All rights reserved.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class WorkoutCell: UITableViewCell {
 
-    @IBOutlet weak var setsCount: UILabel!
-    @IBOutlet weak var repsCount: UILabel!
-    @IBOutlet weak var workoutName: UILabel!
-    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var setsLabel: UILabel!
+    @IBOutlet weak var repsLabel: UILabel!
+    @IBOutlet weak var workoutLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

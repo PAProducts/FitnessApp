@@ -36,7 +36,7 @@ Each of the functions will be demonstrated live by alternating group members
 - [x] User is able to securely log out of the application
 - [ ] User logins are persisted
 - [x] User is able to delete their account
-- [ ] User is able to view workouts according to muscle group
+- [x] User is able to view workouts according to muscle group
 - [ ] User is able to like/dislike workouts
 - [ ] User is able to view a list of popular workouts
 - [ ] User is able to save workouts for offline use//

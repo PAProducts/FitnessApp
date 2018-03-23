@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +33,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90R-gd-u8U">
                                 <rect key="frame" x="79" y="321" width="217" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="217" id="x8w-xY-C50"/>
+                                    <constraint firstAttribute="width" constant="217" id="2kI-ph-zbI"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,10 +49,10 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIM-pv-gNH">
-                                <rect key="frame" x="152" y="465" width="70" height="31"/>
+                                <rect key="frame" x="87" y="465" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.36570543896494523" green="0.60104076864777067" blue="0.72935556994818651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="K5V-8S-Fvw"/>
-                                    <constraint firstAttribute="height" constant="31" id="hgb-hf-tAC"/>
+                                    <constraint firstAttribute="width" constant="200" id="lyr-EU-Nzk"/>
                                 </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,10 +62,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMD-Gp-2Ze">
-                                <rect key="frame" x="152" y="518" width="70" height="31"/>
+                                <rect key="frame" x="241.66666666666663" y="548.66666666666663" width="70" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="101-SC-hHv"/>
-                                    <constraint firstAttribute="width" constant="70" id="fxj-xi-Rkp"/>
+                                    <constraint firstAttribute="width" constant="70" id="kdq-m0-p75"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,23 +73,33 @@
                                     <action selector="didSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nL-8b-Qb7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb0-Bi-M2z">
+                                <rect key="frame" x="60.666666666666657" y="553" width="179" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.027946897847123991" green="0.8470288212435233" blue="0.011628893661339821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.19864025260000001" green="0.33070899419999999" blue="0.54155389850000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="xIM-pv-gNH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3NW-pm-eSa"/>
+                            <constraint firstItem="kU1-mt-0z9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119.33" id="2yf-2i-keF"/>
                             <constraint firstItem="HTv-4K-qM4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Ss-7p-o8k"/>
-                            <constraint firstItem="HTv-4K-qM4" firstAttribute="top" secondItem="90R-gd-u8U" secondAttribute="bottom" constant="40" id="Cqp-0O-wmP"/>
-                            <constraint firstItem="EMD-Gp-2Ze" firstAttribute="top" secondItem="xIM-pv-gNH" secondAttribute="bottom" constant="22" id="I6V-dW-PGP"/>
-                            <constraint firstItem="EMD-Gp-2Ze" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4g-x2-0TC"/>
-                            <constraint firstItem="90R-gd-u8U" firstAttribute="top" secondItem="kU1-mt-0z9" secondAttribute="bottom" constant="99" id="bE8-Td-n26"/>
-                            <constraint firstItem="xIM-pv-gNH" firstAttribute="top" secondItem="HTv-4K-qM4" secondAttribute="bottom" constant="44" id="fPS-HB-UA5"/>
-                            <constraint firstItem="kU1-mt-0z9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rMS-uZ-13M"/>
-                            <constraint firstItem="90R-gd-u8U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w9G-Fc-7Qi"/>
+                            <constraint firstItem="xIM-pv-gNH" firstAttribute="top" secondItem="HTv-4K-qM4" secondAttribute="bottom" constant="44" id="FlR-pK-WUS"/>
+                            <constraint firstItem="Rb0-Bi-M2z" firstAttribute="top" secondItem="xIM-pv-gNH" secondAttribute="bottom" constant="58" id="Io2-qp-Vae"/>
+                            <constraint firstItem="kU1-mt-0z9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OLt-a5-Kt3"/>
+                            <constraint firstItem="HTv-4K-qM4" firstAttribute="top" secondItem="90R-gd-u8U" secondAttribute="bottom" constant="40" id="Org-lH-riT"/>
+                            <constraint firstItem="90R-gd-u8U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TMI-cg-3lS"/>
+                            <constraint firstItem="Rb0-Bi-M2z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.8" id="cM3-HK-iJb"/>
+                            <constraint firstItem="EMD-Gp-2Ze" firstAttribute="leading" secondItem="Rb0-Bi-M2z" secondAttribute="trailing" constant="2" id="fzF-J8-gQs"/>
+                            <constraint firstItem="EMD-Gp-2Ze" firstAttribute="centerY" secondItem="Rb0-Bi-M2z" secondAttribute="centerY" id="jKB-On-m6M"/>
+                            <constraint firstItem="xIM-pv-gNH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tFu-G0-INq"/>
                             <constraint firstItem="HTv-4K-qM4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOR-4I-mRv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="headLabel" destination="kU1-mt-0z9" id="TeX-LA-PdC"/>
+                        <outlet property="loginButton" destination="xIM-pv-gNH" id="7Fe-oy-gY8"/>
                         <outlet property="passwordField" destination="HTv-4K-qM4" id="4ze-Gr-0q2"/>
                         <outlet property="usernameField" destination="90R-gd-u8U" id="Yml-bR-I59"/>
                         <segue destination="Gvu-ds-fOr" kind="show" identifier="loginSegue" id="4tq-kV-6tJ"/>
@@ -102,7 +112,7 @@
         <!--FitnessApp-->
         <scene sceneID="b7b-OQ-Q8i">
             <objects>
-                <viewController id="qc0-xy-BEN" sceneMemberID="viewController">
+                <viewController id="qc0-xy-BEN" customClass="WorkoutsViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="42Z-UP-dbq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,11 +121,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="88" id="6yQ-Cu-Qhy">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="88"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_1" id="6yQ-Cu-Qhy">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6yQ-Cu-Qhy" id="6U7-aQ-fqX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -133,6 +143,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="5iQ-rl-0t3"/>
                     <navigationItem key="navigationItem" title="FitnessApp" largeTitleDisplayMode="always" id="trY-Xg-JkY"/>
+                    <connections>
+                        <outlet property="workoutTableView" destination="q0O-eM-pss" id="Njy-uR-Zip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhg-hM-BbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,12 +325,12 @@
             </objects>
             <point key="canvasLocation" x="718" y="171"/>
         </scene>
-        <!--Home View Controller-->
+        <!--FitnessApp-->
         <scene sceneID="2uQ-3d-kaF">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vUM-pq-UIv" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="PLT-rJ-TsA">
+                    <navigationItem key="navigationItem" title="FitnessApp" id="PLT-rJ-TsA">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="YGK-3Q-LDL">
                             <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                             <connections>

@@ -24,7 +24,7 @@ class Message: PFObject, PFSubclassing {
 }
 
 class CustomWorkoutViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
      var messages: [PFObject]?
     override func viewDidLoad() {
@@ -36,6 +36,7 @@ class CustomWorkoutViewController: UIViewController, UITableViewDelegate, UITabl
 
         // Do any additional setup after loading the view.
     }
+    
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let messages = messages {

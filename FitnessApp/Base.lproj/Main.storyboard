@@ -19,7 +19,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,7 +331,7 @@
         <!--Navigation Controller-->
         <scene sceneID="x1V-l7-EO5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gvu-ds-fOr" sceneMemberID="viewController">
+                <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="Gvu-ds-fOr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Vro-ui-kUc">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -358,7 +358,7 @@
         <!--FitnessApp-->
         <scene sceneID="2uQ-3d-kaF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vUM-pq-UIv" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vUM-pq-UIv" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="FitnessApp" id="PLT-rJ-TsA">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="YGK-3Q-LDL">

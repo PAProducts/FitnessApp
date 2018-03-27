@@ -199,9 +199,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whz-YS-f6l">
+                                                    <rect key="frame" x="217" y="11" width="143" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.023520516569548788" green="1" blue="0.11771091000592104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-lg-0Qq">
+                                                    <rect key="frame" x="137" y="69" width="82" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="recommend"/>
+                                                    <connections>
+                                                        <action selector="didReccomend:" destination="Uab-gK-vNj" eventType="touchUpInside" id="R2M-4g-N02"/>
+                                                        <action selector="didRecom:" destination="Bf3-bl-4x6" eventType="touchUpInside" id="MgX-jh-MgV"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likeCount" destination="whz-YS-f6l" id="AQl-YA-sqZ"/>
                                             <outlet property="repsLabel" destination="JzA-vx-N7f" id="rcj-QE-tjf"/>
                                             <outlet property="setsLabel" destination="gh5-U2-Afj" id="LDP-hH-FSz"/>
                                             <outlet property="usernameLabel" destination="hYx-VV-Hf2" id="HQB-Xa-MkU"/>

@@ -16,6 +16,10 @@ class Workout: PFObject, PFSubclassing {
     @NSManaged var workout: String?
     @NSManaged var user: String?
     @NSManaged var repCount: String?
+    @NSManaged var liked: String?
+    @NSManaged var flag: String?
+    
+    
     
     
     // returns the Parse name that should be used
@@ -57,10 +61,13 @@ class AddWorkoutViewController: UIViewController {
     
     func addWorkout() {
         let addedWorkout = Workout()
+      //  let instance = WorkoutCell
         addedWorkout.workout = workoutText.text ?? ""
         addedWorkout.repCount = repsText.text ?? ""
         addedWorkout.reps = setsText.text ?? ""
         addedWorkout.user = PFUser.current()?.username
+        addedWorkout.liked = "Recommended"
+        addedWorkout.flag = "false"
         if (workoutText.text != nil || repsText.text != "" || setsText.text != ""){
             addedWorkout.saveInBackground { (success, error) in
                 

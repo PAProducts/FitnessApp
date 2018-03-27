@@ -39,7 +39,7 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if count == 1 {
             currentWorkout.flag = "true"
             currentWorkout.saveInBackground()
-            count -= 1 
+            count -= 1
         }
         if (currentWorkout.flag == "true") {
         cell.likeCount.text = currentWorkout.liked

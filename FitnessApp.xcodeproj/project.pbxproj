@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104FA9BA206D9CDA00227CBB /* ShoulderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */; };
 		1056C990206D8ED50063A77C /* MuscleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056C98F206D8ED50063A77C /* MuscleCell.swift */; };
 		1056C992206D97170063A77C /* ArmExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056C991206D97170063A77C /* ArmExercisesViewController.swift */; };
+		107C71E4206D9B4A00723CDA /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C71E3206D9B4A00723CDA /* BackViewController.swift */; };
+		107C71E6206D9BDB00723CDA /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C71E5206D9BDB00723CDA /* ChestViewController.swift */; };
+		107C71E8206D9C3400723CDA /* LegsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C71E7206D9C3400723CDA /* LegsViewController.swift */; };
 		10FD4B0F206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4B0E206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift */; };
 		10FD4B11206D63C7000DBBF7 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4B10206D63C7000DBBF7 /* WorkoutsViewController.swift */; };
 		10FD4B13206D7536000DBBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FD4B12206D7536000DBBF7 /* Assets.xcassets */; };
@@ -50,8 +54,12 @@
 
 /* Begin PBXFileReference section */
 		087162F87A97698EDEC1E94B /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoulderViewController.swift; sourceTree = "<group>"; };
 		1056C98F206D8ED50063A77C /* MuscleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
 		1056C991206D97170063A77C /* ArmExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmExercisesViewController.swift; sourceTree = "<group>"; };
+		107C71E3206D9B4A00723CDA /* BackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
+		107C71E5206D9BDB00723CDA /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
+		107C71E7206D9C3400723CDA /* LegsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegsViewController.swift; sourceTree = "<group>"; };
 		10FD4B0E206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroupWorkoutsViewController.swift; sourceTree = "<group>"; };
 		10FD4B10206D63C7000DBBF7 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
 		10FD4B12206D7536000DBBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +174,10 @@
 				10FD4B14206D7955000DBBF7 /* AbsExercisesViewController.swift */,
 				1056C98F206D8ED50063A77C /* MuscleCell.swift */,
 				1056C991206D97170063A77C /* ArmExercisesViewController.swift */,
+				107C71E3206D9B4A00723CDA /* BackViewController.swift */,
+				107C71E5206D9BDB00723CDA /* ChestViewController.swift */,
+				107C71E7206D9C3400723CDA /* LegsViewController.swift */,
+				104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -505,15 +517,19 @@
 			files = (
 				D1802682205FFE0500602F22 /* LoginViewController.swift in Sources */,
 				4E52DF762064B05D00663750 /* CustomViewController.swift in Sources */,
+				107C71E6206D9BDB00723CDA /* ChestViewController.swift in Sources */,
 				4E52DF7A2064B36C00663750 /* AddWorkoutViewController.swift in Sources */,
 				D1802656205FFA2100602F22 /* ViewController.swift in Sources */,
 				1056C990206D8ED50063A77C /* MuscleCell.swift in Sources */,
 				4E83A1AB2061BFD3004BADBE /* ProfileViewController.swift in Sources */,
+				104FA9BA206D9CDA00227CBB /* ShoulderViewController.swift in Sources */,
 				D1802654205FFA2100602F22 /* AppDelegate.swift in Sources */,
+				107C71E4206D9B4A00723CDA /* BackViewController.swift in Sources */,
 				10FD4B11206D63C7000DBBF7 /* WorkoutsViewController.swift in Sources */,
 				4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */,
 				1056C992206D97170063A77C /* ArmExercisesViewController.swift in Sources */,
 				4E52DF782064B28700663750 /* WorkoutCell.swift in Sources */,
+				107C71E8206D9C3400723CDA /* LegsViewController.swift in Sources */,
 				10FD4B15206D7955000DBBF7 /* AbsExercisesViewController.swift in Sources */,
 				10FD4B0F206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift in Sources */,
 			);

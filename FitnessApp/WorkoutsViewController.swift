@@ -2,117 +2,42 @@
 //  WorkoutsViewController.swift
 //  FitnessApp
 //
-//  Created by Anubhav Saxena on 3/21/18.
+//  Created by Anubhav Saxena on 3/29/18.
 //  Copyright © 2018 Pallav Kamojjhala. All rights reserved.
 //
 
 import UIKit
-import Firebase
-import FirebaseDatabase
 
-class WorkoutsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
+class WorkoutsViewController: UIViewController {
+
+    @IBOutlet weak var absImageButton: UIButton!
+    @IBOutlet weak var armsImageButton: UIButton!
+    @IBOutlet weak var backImageButton: UIButton!
+    @IBOutlet weak var chestImageButton: UIButton!
+    @IBOutlet weak var legsImageButton: UIButton!
+    @IBOutlet weak var shouldersImageButton: UIButton!
     
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text, !searchText.isEmpty {
-            
-            ref = Database.database().reference()
-            databaseHandle = ref?.child("Exercises").observe(.childAdded, with: { (snapshot) in
-                let post = snapshot.value as? String
-                if let actualPost = post {
-                    if (actualPost.contains(searchText)) {
-                        self.list.append(actualPost)
-                        self.workoutTableView.reloadData()
-                    }
-                }
-            })
-            list.removeAll()
-        }
-        
-        else {
-            ref = Database.database().reference()
-            databaseHandle = ref?.child("Exercises").observe(.childAdded, with: { (snapshot) in
-                let post = snapshot.value as? String
-                if let actualPost = post {
-                    self.list.append(actualPost)
-                    self.workoutTableView.reloadData()
-                }
-            })
-            list.removeAll()
-        }
-        
-    }
-    
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
-    }
-    
-    var ref:DatabaseReference?
-    var databaseHandle: DatabaseHandle?
-    
-    let searchController = UISearchController(searchResultsController: nil)
-    
-    var testArray = [String]()
-    
-    var list = [String]()
-    
-    @IBOutlet weak var workoutTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        searchController.searchResultsUpdater = self
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.dimsBackgroundDuringPresentation = false
-        workoutTableView.tableHeaderView = searchController.searchBar
-        searchController.hidesNavigationBarDuringPresentation = false;
-        
-        // Include the search bar within the navigation bar.
-        self.navigationItem.titleView = self.searchController.searchBar;
-        
-        self.definesPresentationContext = true;
-        
-        ref = Database.database().reference()
-        databaseHandle = ref?.child("Exercises").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? String
-            if let actualPost = post {
-                self.list.append(actualPost)
-                self.workoutTableView.reloadData()
-            }
-            //dump(self.list)
-            //print(self.list)
-        })
-        
-        list.removeAll()
-        
-        workoutTableView.delegate = self
-        workoutTableView.dataSource = self
-        
-        
-        /* works
-        let titleRef = self.ref?.child("Exercises")
-        titleRef?.queryOrdered(byChild: "Exercises").observe(.childAdded, with: { snapshot in
-            
-            if let title = snapshot.value as? String {
-                self.testArray.append(title)
-                
-                // Double-check that the correct data is being pulled by printing to the console.
-                print("\(self.testArray)")
-                
-                // async download so need to reload the table that this data feeds into.
-                //self.woableView.reloadData()
-            }
-        })
-         */
-        
+        absImageButton.layer.cornerRadius = 15
+        absImageButton.layer.borderWidth = 2
+        absImageButton.layer.borderColor =  UIColor.black.cgColor
+        armsImageButton.layer.cornerRadius = 15
+        armsImageButton.layer.borderWidth = 2
+        armsImageButton.layer.borderColor =  UIColor.black.cgColor
+        backImageButton.layer.cornerRadius = 15
+        backImageButton.layer.borderWidth = 2
+        backImageButton.layer.borderColor =  UIColor.black.cgColor
+        chestImageButton.layer.cornerRadius = 15
+        chestImageButton.layer.borderWidth = 2
+        chestImageButton.layer.borderColor =  UIColor.black.cgColor
+        legsImageButton.layer.cornerRadius = 15
+        legsImageButton.layer.borderWidth = 2
+        legsImageButton.layer.borderColor =  UIColor.black.cgColor
+        shouldersImageButton.layer.cornerRadius = 15
+        shouldersImageButton.layer.borderWidth = 2
+        shouldersImageButton.layer.borderColor =  UIColor.black.cgColor
         // Do any additional setup after loading the view.
-    }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell_1")
-        cell.textLabel?.text = list[indexPath.row]
-        return(cell)
     }
 
     override func didReceiveMemoryWarning() {

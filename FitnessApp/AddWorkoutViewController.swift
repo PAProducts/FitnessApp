@@ -18,7 +18,8 @@ class Workout: PFObject, PFSubclassing {
     @NSManaged var repCount: String?
     @NSManaged var liked: String?
     @NSManaged var flag: String?
-    
+    @NSManaged var likes: NSNumber?
+    @NSManaged var didLike: String?
     
     
     
@@ -45,6 +46,9 @@ class AddWorkoutViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didCancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func didTapAdd(_ sender: Any) {
         
         if workoutText.text == "" || repsText.text == "" || setsText.text == "" {
@@ -66,8 +70,10 @@ class AddWorkoutViewController: UIViewController {
         addedWorkout.repCount = repsText.text ?? ""
         addedWorkout.reps = setsText.text ?? ""
         addedWorkout.user = PFUser.current()?.username
-        addedWorkout.liked = "Recommended"
         addedWorkout.flag = "false"
+        addedWorkout.likes = 0
+        addedWorkout.liked = "likes" //+ (addedWorkout.likes as! String!)
+        addedWorkout.didLike = "false"
         if (workoutText.text != nil || repsText.text != "" || setsText.text != ""){
             addedWorkout.saveInBackground { (success, error) in
                 

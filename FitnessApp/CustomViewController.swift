@@ -32,46 +32,16 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "WorkoutCell", for: indexPath) as! WorkoutCell
         print("Wow")
         let currentWorkout = workouts[indexPath.row]
-        cell.setsLabel.text = "Sets:" + currentWorkout.reps!
-        cell.workoutLabel.text = "Name:" + currentWorkout.workout!
-        cell.usernameLabel.text = "@" + currentWorkout.user!
-        cell.repsLabel.text = "Reps:" + currentWorkout.repCount!
-        if count == 1 {
-            currentWorkout.flag = "true"
-            currentWorkout.saveInBackground()
-            count -= 1
-        }
-        if (currentWorkout.flag == "true") {
-        cell.likeCount.text = currentWorkout.liked
-        
-        }
-        else {
-            cell.likeCount.text = ""
-        }
-        
-        
+
+        cell.workout = currentWorkout
+     //   print((currentWorkout.reps).toInt)
         return cell
     }
     
    var count = 0
-    @IBAction func didRecom(_ sender: Any) {
-    count = 1
-     /*   addedWorkout.saveInBackground { (success, error) in
-            if success {
-                print("saved flag")
-            }
-            else {
-                print("flag didnt work")
-            }
-        } */
-        getMSGs()
-    }
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    var filter = 0;
+    
     
     @IBAction func didAdd(_ sender: Any) {
         self.performSegue(withIdentifier: "addSegue", sender: nil)

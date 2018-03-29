@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		106172D82062E25700BEE741 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106172D72062E25700BEE741 /* WorkoutsViewController.swift */; };
-		109E301E2063FA5B0044A03D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 109E301D2063FA5B0044A03D /* GoogleService-Info.plist */; };
+		104FA9BA206D9CDA00227CBB /* ShoulderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */; };
+		1056C990206D8ED50063A77C /* MuscleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056C98F206D8ED50063A77C /* MuscleCell.swift */; };
+		1056C992206D97170063A77C /* ArmExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1056C991206D97170063A77C /* ArmExercisesViewController.swift */; };
+		107C71E4206D9B4A00723CDA /* BackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C71E3206D9B4A00723CDA /* BackViewController.swift */; };
+		107C71E6206D9BDB00723CDA /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C71E5206D9BDB00723CDA /* ChestViewController.swift */; };
+		107C71E8206D9C3400723CDA /* LegsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C71E7206D9C3400723CDA /* LegsViewController.swift */; };
+		10FD4B0F206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4B0E206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift */; };
+		10FD4B11206D63C7000DBBF7 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4B10206D63C7000DBBF7 /* WorkoutsViewController.swift */; };
+		10FD4B13206D7536000DBBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FD4B12206D7536000DBBF7 /* Assets.xcassets */; };
+		10FD4B15206D7955000DBBF7 /* AbsExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FD4B14206D7955000DBBF7 /* AbsExercisesViewController.swift */; };
+		10FD4B23206D85F2000DBBF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10FD4B22206D85F2000DBBF7 /* GoogleService-Info.plist */; };
 		4AD04FC083116A94B9CA8D66 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBBF67037915ADDCC2BA77B /* Pods_FitnessAppTests.framework */; };
 		4E52DF762064B05D00663750 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52DF752064B05D00663750 /* CustomViewController.swift */; };
 		4E52DF782064B28700663750 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52DF772064B28700663750 /* WorkoutCell.swift */; };
@@ -20,7 +29,6 @@
 		D1802654205FFA2100602F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1802653205FFA2100602F22 /* AppDelegate.swift */; };
 		D1802656205FFA2100602F22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1802655205FFA2100602F22 /* ViewController.swift */; };
 		D1802659205FFA2100602F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1802657205FFA2100602F22 /* Main.storyboard */; };
-		D180265B205FFA2100602F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D180265A205FFA2100602F22 /* Assets.xcassets */; };
 		D180265E205FFA2100602F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D180265C205FFA2100602F22 /* LaunchScreen.storyboard */; };
 		D1802669205FFA2100602F22 /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1802668205FFA2100602F22 /* FitnessAppTests.swift */; };
 		D1802674205FFA2100602F22 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1802673205FFA2100602F22 /* FitnessAppUITests.swift */; };
@@ -46,8 +54,17 @@
 
 /* Begin PBXFileReference section */
 		087162F87A97698EDEC1E94B /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
-		106172D72062E25700BEE741 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
-		109E301D2063FA5B0044A03D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoulderViewController.swift; sourceTree = "<group>"; };
+		1056C98F206D8ED50063A77C /* MuscleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
+		1056C991206D97170063A77C /* ArmExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmExercisesViewController.swift; sourceTree = "<group>"; };
+		107C71E3206D9B4A00723CDA /* BackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewController.swift; sourceTree = "<group>"; };
+		107C71E5206D9BDB00723CDA /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
+		107C71E7206D9C3400723CDA /* LegsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegsViewController.swift; sourceTree = "<group>"; };
+		10FD4B0E206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroupWorkoutsViewController.swift; sourceTree = "<group>"; };
+		10FD4B10206D63C7000DBBF7 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		10FD4B12206D7536000DBBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10FD4B14206D7955000DBBF7 /* AbsExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsExercisesViewController.swift; sourceTree = "<group>"; };
+		10FD4B22206D85F2000DBBF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2198BCEDD0863CFC31E74678 /* Pods_FitnessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345BB911DDC9F6180F400512 /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C46FB5D7CADC72DA3F05647 /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,7 +80,6 @@
 		D1802653205FFA2100602F22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1802655205FFA2100602F22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1802658205FFA2100602F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D180265A205FFA2100602F22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D180265D205FFA2100602F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D180265F205FFA2100602F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1802664205FFA2100602F22 /* FitnessAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +134,6 @@
 		D1802647205FFA2100602F22 = {
 			isa = PBXGroup;
 			children = (
-				109E301D2063FA5B0044A03D /* GoogleService-Info.plist */,
 				D1802652205FFA2100602F22 /* FitnessApp */,
 				D1802667205FFA2100602F22 /* FitnessAppTests */,
 				D1802672205FFA2100602F22 /* FitnessAppUITests */,
@@ -141,19 +156,28 @@
 		D1802652205FFA2100602F22 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				10FD4B22206D85F2000DBBF7 /* GoogleService-Info.plist */,
+				10FD4B12206D7536000DBBF7 /* Assets.xcassets */,
 				D1802653205FFA2100602F22 /* AppDelegate.swift */,
 				D1802655205FFA2100602F22 /* ViewController.swift */,
 				D1802657205FFA2100602F22 /* Main.storyboard */,
-				D180265A205FFA2100602F22 /* Assets.xcassets */,
 				D180265C205FFA2100602F22 /* LaunchScreen.storyboard */,
 				D180265F205FFA2100602F22 /* Info.plist */,
 				D1802681205FFE0500602F22 /* LoginViewController.swift */,
 				4E83A1A82061B186004BADBE /* HomeViewController.swift */,
 				4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */,
-				106172D72062E25700BEE741 /* WorkoutsViewController.swift */,
 				4E52DF752064B05D00663750 /* CustomViewController.swift */,
 				4E52DF772064B28700663750 /* WorkoutCell.swift */,
 				4E52DF792064B36C00663750 /* AddWorkoutViewController.swift */,
+				10FD4B0E206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift */,
+				10FD4B10206D63C7000DBBF7 /* WorkoutsViewController.swift */,
+				10FD4B14206D7955000DBBF7 /* AbsExercisesViewController.swift */,
+				1056C98F206D8ED50063A77C /* MuscleCell.swift */,
+				1056C991206D97170063A77C /* ArmExercisesViewController.swift */,
+				107C71E3206D9B4A00723CDA /* BackViewController.swift */,
+				107C71E5206D9BDB00723CDA /* ChestViewController.swift */,
+				107C71E7206D9C3400723CDA /* LegsViewController.swift */,
+				104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -306,8 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D180265E205FFA2100602F22 /* LaunchScreen.storyboard in Resources */,
-				109E301E2063FA5B0044A03D /* GoogleService-Info.plist in Resources */,
-				D180265B205FFA2100602F22 /* Assets.xcassets in Resources */,
+				10FD4B23206D85F2000DBBF7 /* GoogleService-Info.plist in Resources */,
+				10FD4B13206D7536000DBBF7 /* Assets.xcassets in Resources */,
 				D1802659205FFA2100602F22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,13 +517,21 @@
 			files = (
 				D1802682205FFE0500602F22 /* LoginViewController.swift in Sources */,
 				4E52DF762064B05D00663750 /* CustomViewController.swift in Sources */,
+				107C71E6206D9BDB00723CDA /* ChestViewController.swift in Sources */,
 				4E52DF7A2064B36C00663750 /* AddWorkoutViewController.swift in Sources */,
 				D1802656205FFA2100602F22 /* ViewController.swift in Sources */,
+				1056C990206D8ED50063A77C /* MuscleCell.swift in Sources */,
 				4E83A1AB2061BFD3004BADBE /* ProfileViewController.swift in Sources */,
-				106172D82062E25700BEE741 /* WorkoutsViewController.swift in Sources */,
+				104FA9BA206D9CDA00227CBB /* ShoulderViewController.swift in Sources */,
 				D1802654205FFA2100602F22 /* AppDelegate.swift in Sources */,
+				107C71E4206D9B4A00723CDA /* BackViewController.swift in Sources */,
+				10FD4B11206D63C7000DBBF7 /* WorkoutsViewController.swift in Sources */,
 				4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */,
+				1056C992206D97170063A77C /* ArmExercisesViewController.swift in Sources */,
 				4E52DF782064B28700663750 /* WorkoutCell.swift in Sources */,
+				107C71E8206D9C3400723CDA /* LegsViewController.swift in Sources */,
+				10FD4B15206D7955000DBBF7 /* AbsExercisesViewController.swift in Sources */,
+				10FD4B0F206D636C000DBBF7 /* MuscleGroupWorkoutsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

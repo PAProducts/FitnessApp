@@ -20,6 +20,10 @@ class Workout: PFObject, PFSubclassing {
     @NSManaged var flag: String?
     @NSManaged var likes: NSNumber?
     @NSManaged var didLike: String?
+    @NSManaged var muscleGroup: String?
+    @NSManaged var descrip: String?
+    
+    
     
     
     
@@ -30,21 +34,59 @@ class Workout: PFObject, PFSubclassing {
     
 }
 
-class AddWorkoutViewController: UIViewController {
+class AddWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    
 
+    @IBOutlet weak var descriptionView: UITextView!
+    @IBOutlet weak var musclePicker: UIPickerView!
+    
+    var pickerData: [String] = [String]()
     @IBOutlet weak var setsText: UITextField!
     @IBOutlet weak var repsText: UITextField!
     @IBOutlet weak var workoutText: UITextField!
+    var mGroup: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.musclePicker.delegate = self
+        self.musclePicker.dataSource = self
+        
+         pickerData = ["Legs", "Chest", "Shoulders", "Back", "Abs", "Arms"]
 
         // Do any additional setup after loading the view.
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        //print(pickerData[row])
+        return pickerData[row]
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+        print(pickerData[row])
+        mGroup = pickerData[row]
+    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  //  var myImage: UIImage?
+    
+  
     
     @IBAction func didCancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -74,6 +116,10 @@ class AddWorkoutViewController: UIViewController {
         addedWorkout.likes = 0
         addedWorkout.liked = "likes" //+ (addedWorkout.likes as! String!)
         addedWorkout.didLike = "false"
+        addedWorkout.muscleGroup = mGroup
+        addedWorkout.descrip = descriptionView.text
+     //   addedWorkout.workoutImage = workoutIMG.
+        print()
         if (workoutText.text != nil || repsText.text != "" || setsText.text != ""){
             addedWorkout.saveInBackground { (success, error) in
                 

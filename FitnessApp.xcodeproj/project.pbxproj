@@ -24,6 +24,7 @@
 		4E52DF7A2064B36C00663750 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52DF792064B36C00663750 /* AddWorkoutViewController.swift */; };
 		4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E83A1A82061B186004BADBE /* HomeViewController.swift */; };
 		4E83A1AB2061BFD3004BADBE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */; };
+		4E9F4C402079A04000F8566E /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F4C3F2079A04000F8566E /* FilterViewController.swift */; };
 		7CC149240035E83BE4E0F9A5 /* Pods_FitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2198BCEDD0863CFC31E74678 /* Pods_FitnessAppUITests.framework */; };
 		C12CB9AA2AA312EC3D730F70 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BB911DDC9F6180F400512 /* Pods_FitnessApp.framework */; };
 		D1802654205FFA2100602F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1802653205FFA2100602F22 /* AppDelegate.swift */; };
@@ -74,6 +75,7 @@
 		4E52DF792064B36C00663750 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		4E83A1A82061B186004BADBE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4E9F4C3F2079A04000F8566E /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		5A7350E94810B00A00FCA250 /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4871FAB956D5C59B95BC863 /* Pods-FitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessAppUITests/Pods-FitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1802650205FFA2100602F22 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +180,7 @@
 				107C71E5206D9BDB00723CDA /* ChestViewController.swift */,
 				107C71E7206D9C3400723CDA /* LegsViewController.swift */,
 				104FA9B9206D9CDA00227CBB /* ShoulderViewController.swift */,
+				4E9F4C3F2079A04000F8566E /* FilterViewController.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -527,6 +530,7 @@
 				107C71E4206D9B4A00723CDA /* BackViewController.swift in Sources */,
 				10FD4B11206D63C7000DBBF7 /* WorkoutsViewController.swift in Sources */,
 				4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */,
+				4E9F4C402079A04000F8566E /* FilterViewController.swift in Sources */,
 				1056C992206D97170063A77C /* ArmExercisesViewController.swift in Sources */,
 				4E52DF782064B28700663750 /* WorkoutCell.swift in Sources */,
 				107C71E8206D9C3400723CDA /* LegsViewController.swift in Sources */,
@@ -699,9 +703,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N34KA7H88H;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pallav.FitnessApp;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAppPK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -714,9 +719,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N34KA7H88H;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pallav.FitnessApp;
+				PRODUCT_BUNDLE_IDENTIFIER = FitnessAppPK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -28,13 +28,22 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return workouts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("wow2")
+       // print("wow2")
         let cell = tableView.dequeueReusableCell(withIdentifier: "WorkoutCell", for: indexPath) as! WorkoutCell
-        print("Wow")
+      //  print("Wow")
         let currentWorkout = workouts[indexPath.row]
 
         cell.workout = currentWorkout
+     //   let filter = FilterViewController()
+        
+        
+       
+        
+        
+        
      //   print((currentWorkout.reps).toInt)
+      //  cell.backgroun = #imageLiteral(resourceName: "abs")
+        
         return cell
     }
     
@@ -46,10 +55,27 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func didAdd(_ sender: Any) {
         self.performSegue(withIdentifier: "addSegue", sender: nil)
     }
-    
+    var filterGroup = 0
+    @IBAction func didFilter(_ sender: Any) {
+       // filterGroup = 1
+        if filterGroup == 1 {
+            filterGroup = 0
+            getMSGs()
+        }
+        else {
+            filterGroup = 1
+            getMSGs()
+        }
+    }
     @objc func getMSGs() {
         let query = Workout.query()
-        query?.addDescendingOrder("createdAt")
+        if filterGroup == 1 {
+            query?.addAscendingOrder("muscleGroup")
+        }
+        else {
+        query?.addDescendingOrder("likes")
+        }
+        
         
         query?.findObjectsInBackground { (posts, error) in
             if let posts = posts {

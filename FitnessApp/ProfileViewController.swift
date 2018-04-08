@@ -11,12 +11,14 @@ import Parse
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var deleteButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let userName = PFUser.current()
         print(userName)
         usernameLabel.text = "@" + (userName?.username!)!
-
+        deleteButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
 

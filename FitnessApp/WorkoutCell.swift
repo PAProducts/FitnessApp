@@ -66,9 +66,9 @@ class WorkoutCell: UITableViewCell {
                         if let user = workoutLike["userID"] as? String {
                             if user == PFUser.current()!.objectId {
                                 if (workoutLike["type"] as! Bool) == true {
-                                    self.likeButton.setTitle("dislike \(self.workout.likes!)", for: .normal)
+                                    self.likeButton.setTitle("Dislike \(self.workout.likes!)", for: .normal)
                                 } else {
-                                    self.likeButton.setTitle("like \(self.workout.likes!)", for: .normal)
+                                    self.likeButton.setTitle("Like \(self.workout.likes!)", for: .normal)
                                     
                                 }
                             }
@@ -147,7 +147,7 @@ class WorkoutCell: UITableViewCell {
                                 self.workout.incrementKey("likes", byAmount: -1)
                             } else if success {
                             //    self.likesLabel.text = "\(self.workout.likes!)"
-                                self.likeButton.setTitle("dislike \(self.workout.likes!)", for: .normal)
+                                self.likeButton.setTitle("Dislike \(self.workout.likes!)", for: .normal)
                             }
                         }
                     }

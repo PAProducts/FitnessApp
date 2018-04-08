@@ -24,7 +24,9 @@
 		4E52DF7A2064B36C00663750 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52DF792064B36C00663750 /* AddWorkoutViewController.swift */; };
 		4E83A1A92061B186004BADBE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E83A1A82061B186004BADBE /* HomeViewController.swift */; };
 		4E83A1AB2061BFD3004BADBE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */; };
+		4E90F4312079F95200537A99 /* icons8-weightlifting-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E90F4302079F95200537A99 /* icons8-weightlifting-filled-30.png */; };
 		4E9F4C402079A04000F8566E /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F4C3F2079A04000F8566E /* FilterViewController.swift */; };
+		4EA2C3442079F7700088B014 /* icons8-user-filled-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EA2C3432079F76F0088B014 /* icons8-user-filled-20.png */; };
 		7CC149240035E83BE4E0F9A5 /* Pods_FitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2198BCEDD0863CFC31E74678 /* Pods_FitnessAppUITests.framework */; };
 		C12CB9AA2AA312EC3D730F70 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345BB911DDC9F6180F400512 /* Pods_FitnessApp.framework */; };
 		D1802654205FFA2100602F22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1802653205FFA2100602F22 /* AppDelegate.swift */; };
@@ -75,7 +77,9 @@
 		4E52DF792064B36C00663750 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		4E83A1A82061B186004BADBE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4E83A1AA2061BFD3004BADBE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4E90F4302079F95200537A99 /* icons8-weightlifting-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-weightlifting-filled-30.png"; path = "../../../../Downloads/icons8-weightlifting-filled-30.png"; sourceTree = "<group>"; };
 		4E9F4C3F2079A04000F8566E /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		4EA2C3432079F76F0088B014 /* icons8-user-filled-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icons8-user-filled-20.png"; path = "../../../../Downloads/icons8-user-filled-20.png"; sourceTree = "<group>"; };
 		5A7350E94810B00A00FCA250 /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4871FAB956D5C59B95BC863 /* Pods-FitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessAppUITests/Pods-FitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1802650205FFA2100602F22 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +164,8 @@
 			children = (
 				10FD4B22206D85F2000DBBF7 /* GoogleService-Info.plist */,
 				10FD4B12206D7536000DBBF7 /* Assets.xcassets */,
+				4E90F4302079F95200537A99 /* icons8-weightlifting-filled-30.png */,
+				4EA2C3432079F76F0088B014 /* icons8-user-filled-20.png */,
 				D1802653205FFA2100602F22 /* AppDelegate.swift */,
 				D1802655205FFA2100602F22 /* ViewController.swift */,
 				D1802657205FFA2100602F22 /* Main.storyboard */,
@@ -332,7 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA2C3442079F7700088B014 /* icons8-user-filled-20.png in Resources */,
 				D180265E205FFA2100602F22 /* LaunchScreen.storyboard in Resources */,
+				4E90F4312079F95200537A99 /* icons8-weightlifting-filled-30.png in Resources */,
 				10FD4B23206D85F2000DBBF7 /* GoogleService-Info.plist in Resources */,
 				10FD4B13206D7536000DBBF7 /* Assets.xcassets in Resources */,
 				D1802659205FFA2100602F22 /* Main.storyboard in Resources */,

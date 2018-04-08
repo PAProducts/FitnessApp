@@ -13,10 +13,14 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userName = PFUser.current()
+        print(userName)
+        usernameLabel.text = "@" + (userName?.username!)!
 
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet weak var usernameLabel: UILabel!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -14,7 +14,7 @@ class WorkoutCell: UITableViewCell {
   //  var count = 0
     
     @IBOutlet weak var backgroundIMG: UIImageView!
-    @IBOutlet weak var descView: UITextView!
+ //   @IBOutlet weak var descView: UITextView!
  //   @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var mscGroup: UILabel!
    // @IBOutlet weak var likeCount: UILabel!
@@ -35,7 +35,7 @@ class WorkoutCell: UITableViewCell {
           //  likesLabel.text = "\(workout.likes!)"
             mscGroup.text = "Muscle Group: " +  "'" + workout.muscleGroup! + "'"
        //     imgView.image = workout.workoutImage
-            descView.text = "Description: " + workout.descrip!
+       //     descView.text = "Description: " + workout.descrip!
             if workout.muscleGroup == "Shoulders" {
                 backgroundIMG.image = #imageLiteral(resourceName: "shoulders")
             }

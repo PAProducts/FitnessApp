@@ -37,7 +37,15 @@ class Workout: PFObject, PFSubclassing {
 class AddWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-
+    @IBAction func didTap(_ sender: Any) {
+        dismissKeyboard()
+    }
+    
+    @IBAction func didAdd(_ sender: Any) {
+        performSegue(withIdentifier: "showAdd", sender: nil)
+        
+    }
+    
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var musclePicker: UIPickerView!
     
@@ -46,15 +54,27 @@ class AddWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPicker
     @IBOutlet weak var repsText: UITextField!
     @IBOutlet weak var workoutText: UITextField!
     var mGroup: String?
+    var neededString: String?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.musclePicker.delegate = self
         self.musclePicker.dataSource = self
+    //    descriptionView.text = neededString
+     
         
          pickerData = ["Legs", "Chest", "Shoulders", "Back", "Abs", "Arms"]
+     
+        
 
         // Do any additional setup after loading the view.
+    }
+   
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -117,7 +137,7 @@ class AddWorkoutViewController: UIViewController, UIPickerViewDelegate, UIPicker
         addedWorkout.liked = "likes" //+ (addedWorkout.likes as! String!)
         addedWorkout.didLike = "false"
         addedWorkout.muscleGroup = mGroup
-        addedWorkout.descrip = descriptionView.text
+     //   addedWorkout.descrip = descriptionView.text
      //   addedWorkout.workoutImage = workoutIMG.
         print()
         if (workoutText.text != nil || repsText.text != "" || setsText.text != ""){

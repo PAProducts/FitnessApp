@@ -60,9 +60,11 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
        // filterGroup = 1
         if filterGroup == 1 {
             filterGroup = 0
+            getMSGs()
         }
         else {
             filterGroup = 1
+            getMSGs()
         }
     }
     @objc func getMSGs() {

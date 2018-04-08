@@ -34,8 +34,16 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let currentWorkout = workouts[indexPath.row]
 
         cell.workout = currentWorkout
+     //   let filter = FilterViewController()
+        
+        
+       
+        
+        
+        
      //   print((currentWorkout.reps).toInt)
       //  cell.backgroun = #imageLiteral(resourceName: "abs")
+        
         return cell
     }
     
@@ -47,10 +55,25 @@ class CustomViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func didAdd(_ sender: Any) {
         self.performSegue(withIdentifier: "addSegue", sender: nil)
     }
-    
+    var filterGroup = 0
+    @IBAction func didFilter(_ sender: Any) {
+       // filterGroup = 1
+        if filterGroup == 1 {
+            filterGroup = 0
+        }
+        else {
+            filterGroup = 1
+        }
+    }
     @objc func getMSGs() {
         let query = Workout.query()
+        if filterGroup == 1 {
+            query?.addAscendingOrder("muscleGroup")
+        }
+        else {
         query?.addDescendingOrder("likes")
+        }
+        
         
         query?.findObjectsInBackground { (posts, error) in
             if let posts = posts {
